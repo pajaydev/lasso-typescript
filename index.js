@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = (lasso, config) => {
-    console.log("***lasso typescript***");
+
     let extension = config.extensions || ['ts']
     lasso.dependencies.registerRequireType('ts', {
 

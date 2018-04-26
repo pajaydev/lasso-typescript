@@ -1,11 +1,12 @@
 {
   "name": "lasso-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Typescript using Lasso js",
   "main": "index.js",
   "dependencies": {
     "lasso-less": "^2.4.7",
-    "lasso": "^3.1.4"
+    "lasso": "^3.1.4",
+    "typescript": "^2.3.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com-personal:ajay2507/typescript.git"
+    "url": "git@github.com:ajay2507/typescript.git"
   },
   "author": "Ajaykumar Prathap",
   "license": "ISC"

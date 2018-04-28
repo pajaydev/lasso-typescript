@@ -2,14 +2,22 @@
   "name": "lasso-typescript",
   "version": "1.0.0",
   "description": "Plugin to use Typescript using Lasso js",
+  "keywords": [
+    "lasso",
+    "lasso-plugin",
+    "typescript"
+  ],
   "main": "index.js",
+  "scripts": {
+    "test": "npm run jshint",
+    "jshint": "jshint"
+  },
   "dependencies": {
     "lasso": "^3.1.4",
     "typescript": "^2.3.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "jshint": "^2.5.5"
   },
   "repository": {
     "type": "git",

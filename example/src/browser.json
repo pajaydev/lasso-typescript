@@ -1,0 +1,7 @@
+{
+    "dependencies": [
+        "./style.less",
+        "./Greeter.ts",
+        "require-run: ./main"
+    ]
+}

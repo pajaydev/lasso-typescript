@@ -30,6 +30,13 @@ module.exports = (lasso, config) => {
             return new Promise((resolve, reject) => {
                 resolve();
             });
+        },
+        read: function (lassoContext) {
+
+            return (this._compiled && this._compiled.code) || null;
+        },
+        getDependencies: function (lassoContext) {
+            return [];
         }
     });
 };

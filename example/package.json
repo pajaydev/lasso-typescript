@@ -4,8 +4,18 @@
   "description": "Example to demonstrate lasso typescript plugin.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node index.js",
+    "server": "http-server build/",
+    "start": "npm run build && npm run server"
   },
   "author": "Ajaykumar Prathap",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "jquery": "^2.1.4",
+    "lasso-less": "^2.1.1",
+    "lasso": "^2.2.1",
+    "lasso-typescript": "^1.0.0",
+    "mustache": "^2.2.1"
+  }
 }

@@ -28,22 +28,22 @@ lasso.lassoPage({
         throw err;
     }
 
-    let templatePath = path.join(__dirname, 'src/index.mustache');
+    const templatePath = path.join(__dirname, 'src/index.mustache');
 
-    let mustacheSource = fs.readFileSync(templatePath, { encoding: 'utf8' });
+    const mustacheSource = fs.readFileSync(templatePath, { encoding: 'utf8' });
 
-    let html = mustache.render(mustacheSource, {
+    const html = mustache.render(mustacheSource, {
         lassoHead: result.getHeadHtml(),
         lassoBody: result.getBodyHtml()
     });
 
-    let buildDir = path.join(__dirname, 'build');
+    const buildDir = path.join(__dirname, 'build');
 
     try {
         fs.mkdirSync(buildDir);
     } catch (e) { }
 
-    let outputHtmlFile = path.join(buildDir, 'index.html');
+    const outputHtmlFile = path.join(buildDir, 'index.html');
 
     fs.writeFileSync(outputHtmlFile, html, { encoding: 'utf8' });
 
